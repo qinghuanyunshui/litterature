@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.litterature.mapper.UserMapper">
+<select id="findAll" resultType="user">
+   select * from user
+</select>
+
+<select id="findByUser" parameterType="User" resultType="user">
+select * from user where uname=#{uname} and pwd=#{pwd};
+</select>
+<select id="findByAdmin" parameterType="Admin" resultType="Admin">
+select * from tb_admin where aname=#{aname} and apwd=#{apwd};
+</select>
+<delete id="delete" parameterType="int">
+delete from goods where id=${value};
+</delete>
+</mapper>

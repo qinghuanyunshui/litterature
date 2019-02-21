@@ -1,0 +1,550 @@
+@CHARSET "UTF-8";
+/*清除浏览器默认样式--开始*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+position:relative;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*清除浏览器默认样式--结束*/
+html, body {
+
+height:100%;
+ 	overflow:hidden; 
+	
+}
+/* 头部 */
+header {
+	width: 98%;
+	height: 9%;
+	background: #2e3b46;
+	border-bottom: 1px solid #f1f2f7;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+/* logo图 */
+header img {
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-right: 20px;
+}
+/* logo文字 */
+header span {
+	width: 60%;
+	/* border:1px solid green; */
+	float: left;
+	margin: 8px auto;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* 左侧 */
+nav {
+	width: 15%;
+	height: 89%;
+	float: left;
+	background-color: #394a59;
+	overflow-y: auto;
+}
+/* 右侧 */
+section{
+	width: 85%;
+	min-height:89%;
+	float: left;
+	
+	/* background-color:green;   */
+ /* 	background: url("../img/timg(2).jpg") no-repeat;   */
+	/*  background-size: 100%;  */
+ 	/* opacity: 0.2;  */
+}
+/*左侧 树*/
+nav ul {
+	width: 100%;
+	height: 100%;
+	/* border:1px solid orange; */
+	background-color: #394a59;
+	float: left;
+}
+/*左侧 树 一级li*/
+nav ul li {
+	width: 100%;
+	line-height: 15px;
+	color: #d0d8df;
+}
+
+nav ul li a {
+	color: #d0d8df;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0 10px 10px;
+	font-size: 16px;
+	font-weight: 300;
+	outline: none;
+	border-right: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+}
+
+nav ul li a:hover {
+	background: #2e3b46;
+	color: #fff;
+	display: block;
+}
+
+nav ul li ul {
+	display: none;
+	margin-bottom: 15px;
+}
+/*左侧 树 二级li*/
+nav ul li ul li {
+	width: 99.5%;
+	line-height: 23px;
+	background-color: #d6e6f1;
+	border-right: 1px solid #6196bb;
+	border-bottom: 1px solid #6196bb;
+}
+
+nav ul li ul li a {
+	color: #2e3b46;
+}
+/*登录者div*/
+.user-icon {
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-top: -35px;
+	margin-right: 30px;
+	border-radius: 50%;
+	border: 3px solid lightgray;
+	overflow: hidden;
+}
+/*登录者div  图片*/
+.user-icon img {
+	width: 100%;
+	height: 100%;
+}
+/*登录者div  文字*/
+.user-txt {
+	width: 200px;
+	height: 25px;
+	float: right;
+	margin-top: -35px;
+	margin-right: 100px;
+	padding-top: 15px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #d0d8df;
+}
+/*主页面  表格 上方目录*/
+section  .dirbox{
+	width:100%;
+	height:28px;
+	padding-top:15px;
+	padding-left:15px;
+	color: #778899;
+	border-bottom:1px solid lightgray;
+}
+/*主页面  表格外框*/
+section .tablebox{
+	width:100%;
+ 	height:500px; 
+/*   overflow-y:auto;  
+ 	 overflow-x: hidden; */
+ 	 position: relative;
+}
+/*主页面  表格*/
+section table{
+	border:1px solid #DBDBDB;
+    width:95%;
+ /* 	min-height:60%;  */
+	margin-left:30px;
+	text-align: center;
+	border-collapse:separate;
+	border-radius:5px;
+	/* overflow-y:auto;  */
+}
+/*主页面  表格  行*/
+section table tr{
+	height: 34px;
+	min-height: 34px;
+}
+
+/*主页面  表格 单元格*/
+section table tr td{
+	padding-top:10px;
+	border-bottom:1px solid #DBDBDB;
+	padding-bottom:10px; 
+
+}
+	
+
+/*主页面  表格 上方div*/
+section  .findbox{
+	width:100%;
+	height:50px;
+	margin-top:10px;
+	padding-left:30px;
+	position: relative;
+}
+/*主页面  表格 上方仿按钮*/
+section  .findbox div[class]{
+	width:70px;
+	height:25px;
+	border:none;
+	border-radius:5px;
+	color:white;
+	margin-left:10px;
+	float:left;
+	text-align:center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+/*主页面  表格 上方仿按钮--增加*/
+section  .findbox .btn-add{
+		background-color:green;
+}
+
+section .no-page{
+		
+}
+/*主页面  表格 上方仿按钮--删除*/
+section  .findbox .btn-delete{
+		background-color:red;
+}
+/*主页面  表格 上方仿按钮--导出*/
+section  .findbox .btn-export{
+		background-color:#5CACEE;
+}
+/*主页面  表格 上方搜索框*/
+section  .findbox input[type=text]{
+	float:right;
+	border-radius:5px;
+	width:250px;
+	height:30px;
+	border:1px solid gray;
+	list-style:none;
+	/* margin-right:150px; */
+	outline:medium;
+	padding-left:10px;
+	position: relative;
+	top:0;
+	right:150px;
+	color:#C7C7C7;
+	}
+	/*主页面  表格 上方搜索按钮*/
+section  .findbox #btn-find{
+	float:right;
+	width:20px;
+	height:20px;
+	/* background-color:red; */
+	background:url('../img/find.png') no-repeat;  
+	background-size:100%;
+	position: relative;
+	top:7px;
+	right:-105px;
+
+}	
+/*表头*/
+.tabletitle{
+	background:#EAEAEA;
+    height:40px;
+    font-weight:bold;
+}
+/*表格单双行*/
+.tablesingle{
+	background-color:#F7F7F7;
+}
+/*底部 版权*/
+section footer{
+	width:80%;
+	height:50px;
+	position:absolute;
+	bottom:10px;
+	color:#999999;
+	text-align: center;
+	font-weight:lighter;
+	z-index: 99;
+}
+/*单击增加按钮 弹出层*/
+section .alertDiv ,section .alertDiv1,section .alertCheck{
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+    top:0;
+    left:0;
+    /*此层透明,子层不透明*/
+  background-color: rgba(0,0,0,0.5)!important;
+  background-color: #000;
+  filter:Alpha(opacity=50);
+  display: none;
+  z-index: 99999;
+}
+/*单击增加按钮 弹出层---form框*/
+section  .alertDiv-add ,section  .alertCheck-add{
+	width:500px;
+	height:300px;
+	position:absolute;
+    top:20%;
+    left:30%; 
+    background-color: #F7F7F7;
+    border-radius:10px;
+    padding-top:50px;
+    padding-left:60px;
+    
+}
+/*增加对话框中文本框和密码框*/
+section  .alertDiv-add input[placeholder],section  .alertCheck-add input[placeholder]{
+	width:60%;
+	height:35px;
+	border-radius:5px;
+	margin-bottom:25px;
+	padding-left:10px;
+}
+/*增加对话框中单选按钮*/
+section  .alertDiv-add input[type=radio],section  .alertCheck-add input[type=radio]{
+	height:15px;
+	margin-bottom:30px;
+	margin-top:-10px;
+	font-size:12px;
+	margin-left:20px; 
+	}
+	
+	/*增加对话框中单选按钮中文字*/
+section  .alertDiv-add .rs,section  .alertCheck-add .rs{
+	color:#808080;
+	}
+/*增加对话框中下拉列表*/
+section  .alertDiv-add select{
+	width:50%;
+	height:38px;
+	border-radius:5px;
+	margin-bottom:30px;
+	padding-left:10px;
+	color:#878787;
+}
+section  .alertDiv-add span{
+  margin-left:10px;
+  color:red;
+	}
+/*增加对话框中提交按钮*/
+section  .alertDiv-add .btn ,section  .alertCheck-add .btn{
+	width:100px;
+	height:40px;
+	border-radius:5px;
+	border:none;
+	background:#7EC0EE;
+	color:#EAEAEA;
+	font-size: 16px;
+	margin-right:50px;
+}
+/*增加对话框中提交按钮 鼠标移入*/
+section  .alertDiv-add .btn:hover,section  .alertCheck-add .btn:hover{
+	background:#87CEEB;
+	color:#F0F8FF;
+}
+/*增加对话框中关闭按钮*/
+section  .alertDiv-add .hid,section  .alertCheck-add .hid{
+	color:#CFCFCF;
+	font-size:20px;
+	font-weight: bold;
+	position: absolute;
+	top:5px;
+	right:8px;
+	cursor: pointer;
+}
+/*表格中操作列 两个按钮*/
+section table tr td div{
+	width:45px;
+	height:18px;
+	float: right;
+	cursor: pointer;
+	border:none;
+	border-radius:5px;
+	color:white;
+	margin-top:-4px;
+	margin-right:20px;
+	margin-bottom:-2px;
+	text-align:center;
+	font-size: 12px;
+	padding:6px 5px 0px 5px;
+	text-align: right;
+}
+/*表格中操作列 两个按钮 中的图片*/
+section table tr td div img{
+	width:15px;
+	height:15px;
+	float:left;
+	margin-top:-2px;
+}
+
+section table tr td div a{
+	 text-decoration: none;
+	 color:white;
+}
+/* 删除按钮 */
+section table tr td .btn-delete{
+	background:#CD3333;
+}
+/* 编辑按钮 */
+section table tr td .btn-edit{
+	background:#FFA500;
+}
+section table tr td .btn-upload{
+	background:#008400;
+}
+section table tr td .btn-check{
+	background:#008400;
+}
+/* 分页 */
+section .inpage{
+	width:100%;
+	height:80px;
+	text-align: center;
+	position:absolute;
+	bottom:10px;
+	color:#999999;
+	z-index: 999;
+}
+/*单击增加按钮 弹出层---form框*/
+section  .alertCheck-add{
+	width:500px;
+	height:300px;
+	position:absolute;
+    top:20%;
+    left:30%; 
+    background-color: #F7F7F7;
+    border-radius:10px;
+    padding-top:50px;
+    padding-left:60px;
+    
+}
+/*增加对话框中文本框和密码框*/
+section  .alertDiv-add input[placeholder]{
+	width:60%;
+	height:35px;
+	border-radius:5px;
+	margin-bottom:25px;
+	padding-left:10px;
+}
+/*弹出增加框 中的搜索提示*/
+section  .alertDiv-add #searchbox{
+width:111px;
+position:absolute; 
+background:white;
+top:90px;
+left:140px;
+pdding-top:5px;
+padding-bottom:10px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border:1px solid gray;
+border-top:none;
+display: none;
+} 
+/*弹出增加框 中的搜索提示*/
+section  .alertDiv-add #searchbox ul{
+	width:96%;
+	}
+section  .alertDiv-add #searchbox li{
+	width:96%;
+	line-height: 30px;
+	padding-left:10px;
+}
+section  .alertDiv-add #searchbox li:hover{
+	background:#efefef;
+	}
+/*弹出增加框 中的文本域*/
+section  .alertDiv-add #area{
+ width:370px;
+ height:100px;
+ border-radius:15px;
+ padding-left:10px;
+ padding-top:5px;
+ outline:none;
+}
+section  .alertDiv-add .btn{
+  margin-left:40px;
+}
+.tablebox .see{
+	min-width:350px;
+	min-height:50px;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border:1px solid gray;
+	display: none;
+	z-index: 9999;
+	color:#7c7c7c;
+}
+.tablebox .see ul li{
+	width:90%;
+	height:30px;
+	border-bottom:1px gray dashed;
+	padding-top:8px;
+	padding-left:20px;
+}
+.tablebox .see ul li div{
+	width:100px;
+	float:left;
+	}
+/* 发票 */
+.alertDiv-add .bills-box{
+	width:88%;
+	height:80px;
+	border:5px groove lightgray;
+	border-radius:10px;
+	float: left;
+	margin-top:-20px;
+	margin-right:30px;
+	margin-bottom:20px;
+	overflow: hidden;
+	background-size: 100%;
+}
+.alertDiv-add .bills-box img{
+	width:100%;
+	height:100%;
+}

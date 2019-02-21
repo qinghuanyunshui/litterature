@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+i{
+	width: 30px;
+	height: 25px;
+	display: inline-block !important;
+
+}
+.icon-need{
+	background: url('../img/coin02.png') no-repeat 0px  0px;	
+}
+.icon-need:hover{
+	background: url('../img/coin01.png') no-repeat 0px  0px;	
+}
+.icon-purchase{
+	background: url('../img/coin18.png') no-repeat 0px  0px;	
+}
+.icon-purchase:hover{
+	background: url('../img/coin17.png') no-repeat 0px  0px;	
+}
+.icon-supplier{
+	background: url('../img/coin08.png') no-repeat 0px  0px;	
+}
+.icon-supplier:hover{
+	background: url('../img/coin07.png') no-repeat 0px  0px;	
+}
+
+
+.icon-stock{
+	background: url('../img/coin06.png') no-repeat 0px  0px;	
+}
+.icon-stock:hover{
+	background: url('../img/coin05.png') no-repeat 0px  0px;	
+}
+.icon-data{
+	background: url('../img/coin16.png') no-repeat 0px  0px;	
+}
+.icon-data:hover{
+	background: url('../img/coin15.png') no-repeat 0px  0px;	
+}
+.icon-search{
+	background: url('../img/coin04.png') no-repeat 0px  0px;	
+}
+.icon-search:hover{
+	background: url('../img/coin03.png') no-repeat 0px  0px;	
+}

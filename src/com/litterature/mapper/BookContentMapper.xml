@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.litterature.mapper.BookContentMapper">
+<select id="findBybid" parameterType="Book" resultType="BookContent">
+select * from tb_bookcontent where bid=#{id} order by id1;
+</select>
+
+
+<insert id="addBookContent" parameterType="BookContent">
+insert into tb_bookcontent values(#{id1},#{bid},#{chepter},#{content});
+</insert>
+
+<delete id="deletContentByid" parameterType="int">
+delete from tb_bookcontent where id1=#{id1};
+</delete>
+<delete id="deletContentBybid" parameterType="int">
+delete from tb_bookcontent where bid=#{bid};
+</delete>
+</mapper>

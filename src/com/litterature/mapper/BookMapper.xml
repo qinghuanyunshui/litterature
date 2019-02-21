@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.litterature.mapper.BookMapper">
+<select id="findBookAndContentByName" parameterType="String" resultMap="bac">
+select a.*,b.* from tb_book a join tb_bookcontent b on a.id=b.bid where a.title=#{bookName};
+</select>
+<select id="findBookByid" parameterType="int" resultType="book">
+select * from tb_book where id=#{id};
+</select>
+<select id="getBookByPage"  resultType="book">
+select * from tb_book where demo=#{2} limit #{0},#{1};
+</select>
+<!-- id,bid;
+private String chepter,content;-->
+
+
+<resultMap type="book" id="bac">
+       <id column="id" property="id"/>
+       <result column="readNumber" property="readNumber"/>
+       <result column="author" property="author"/>
+       <result column="creatTime" property="creatTime"/>
+       <result column="type" property="type"/>
+       <result column="title" property="title"/>
+       <result column="demo" property="demo"/>
+       <collection property="bookContents" ofType="BookContent" autoMapping="true">
+        <!--    <id column="pid" /> -->
+        <id column="id1" property="id1"/>
+        <id column="bid" property="bid"/>
+        <id column="chepter" property="chepter"/>
+        <id column="content" property="content"/>
+       </collection>
+     </resultMap>
+     
+<insert id="addBook" parameterType="Book">
+insert into tb_book values(null,#{author},#{creatTime},#{type},0,#{title},#{demo});
+</insert>
+
+<select id="findBookByType" parameterType="String" resultType="book">
+select * from tb_book where demo=#{type};
+</select>
+
+<delete id="deletBook" parameterType="int">
+delete from tb_book where id=#{bid};
+</delete>
+<update id="updateBook" parameterType="Book">
+update tb_book set author=#{author},creatTime=#{creatTime},type=#{type},title=#{title},demo=#{demo} where id=#{id};
+</update>
+</mapper>
